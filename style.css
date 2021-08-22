@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    color: white;
+    text-decoration: none;
+}
+
+/*class: . , id: # */
+
+.logo{
+  height: 10vh;  
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+    background-image: linear-gradient(to right bottom, #3e4756, #51485f, #6a485d, #7e494f, #85513b);
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto; /*moves to left*/
+}
+
+.navlinks{
+    list-style: none; /*mach die Aufzähungspunkte weg*/
+}
+
+.navlinks li{
+    display: inline-block; /*macht li horizontal*/
+    /*One common use for display: inline-block is to display list items horizontally instead of vertically. & does not add a line-break after the element, so the element can sit next to other elements. & allows to set a width and height on the element. */
+    padding: 0px 20px;
+}
+
+/*hover*/
+.navlinks li a{
+    transition: all 0.3s ease 0s; /*ease=smooth; 0s delay*/
+}
+.navlinks li a:hover{
+    color: lightcoral;
+}
+
+/*Button*/
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(84, 58, 179);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: lightcoral;
+}
+
+/*-----------Login--------------*/
+#login{ /*bezieht sich auf alles in der section(login), also der Kasten*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 81vh;
+    background-color:#3e4756;
+}
+
+.kasten{
+   /*display flex würde sich auf das IM Kasten beziehen; gehört hoch*/
+    height: auto;
+    max-width: 40%;
+    min-width: 45%;
+    padding: 50px 50px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+.kasten{
+    display: flex;
+    flex-direction: column;
+    justify-content: ; /*vertikal, oben/unten*/
+    align-items: center; /*horizontal, links/rechts*/
+}
+
+.mail, .passwort{
+    margin-top: 20px;;
+    padding: 20px 25px; /*tb, rl*/
+    background-color: rgb(84, 58, 179);
+    border-radius: 50px;
+    cursor: text;
+    min-width: 30vw;
+}
+
+.kasten button{
+    margin-top: 20px;
+    padding: 5px, 5px;
+    width: auto;
+    background-color: rgb(98, 70, 172);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 1.5rem;
+}
+.kasten button:hover{
+    background-color: lightcoral;
+}
